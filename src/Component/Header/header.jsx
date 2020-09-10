@@ -16,7 +16,7 @@ return (
         <div className='header-icons'>
             <div className='container'>
                 <HomeIcon fontSize='large'/>
-                <p className='text'>Home</p>
+                <p className='text2'>Home</p>
             </div>
             <div className='container'>
                 <FlashOnIcon  fontSize='large'/>
