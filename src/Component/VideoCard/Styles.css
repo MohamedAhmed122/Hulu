@@ -1,0 +1,29 @@
+
+.video-card{
+    color: white;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    margin-bottom: 2git rem;
+
+    transition: transform 100ms;
+}
+.video-card:hover{
+   transform: scale(1.1);
+}
+.video-card img{
+    height: 300px;
+    width: 380px;
+    cursor: pointer;
+    /* object-fit: contain; */
+}
+.video-card p{
+    font-weight: 100;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+}
+.video-card h2{
+    font-weight: 100;
+    margin-bottom: 0.4rem;
+  
+}

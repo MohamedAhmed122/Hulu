@@ -45,7 +45,7 @@ return (
                 </Grid>
             </Grid>
             <Grid item>
-                <Typography variant='h2' className={classes.main}>Hulu</Typography>
+                <Typography variant='h2' className={classes.main}>hulu</Typography>
             </Grid>
         </Grid>
         
