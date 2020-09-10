@@ -1,0 +1,41 @@
+
+
+.header{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  overflow-x: scroll;
+}
+.header::-webkit-scrollbar{
+  display: none; 
+}
+.header{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.container{
+  margin-left: 40px;
+}
+.text{
+  margin-top: 0.5rem;
+  opacity: 0.4;
+  transition:  transform 50ms ease-out;
+}
+.text:hover{
+  margin-top: 0.5rem;
+  opacity: 1;
+  transform: scale(1.2);
+}
+.header-icons{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.header h1{
+  font-family: 'Cabin', sans-serif;
+  font-size: 3rem;
+  color: white;
+  margin:0 50px;
+}
