@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import TextTruncate from 'react-text-truncate';
 import './Styles.css'
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 
 const baseUrl = 'https://image.tmdb.org/t/p/original/'
 
-const VideoCard =({movie})=>{
+const VideoCard =forwardRef(({movie}, ref)=>{
     return(
-        <section className='video-card'>
+        <section ref={ref} className='video-card'>
             <img src={`${baseUrl}${movie.backdrop_path || movie.poster_path}`} alt={movie.title} />
             <TextTruncate
             line={1}
@@ -20,5 +20,5 @@ const VideoCard =({movie})=>{
             <p  style={{color: '#2196f3',fontSize: '1.7rem', marginLeft:'0.5rem'}}>{movie.vote_count} <ThumbUpAltIcon /> </p>
         </section>
     )
-}
+})
 export default VideoCard;
